@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Levi Vary</title>
+    <meta name="author" content="Levi Vary">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/Favicon.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+          <a href="#">
+            <img id="logo"
+               src="images/logo.png"
+               alt="Levi Vary"/>
+          </a>
+          <ul>
+            <li><a class="nav-link" href="#about">
+              About
+              </a></li>
+            <li><a class="nav-link" href="projects.html">
+              Projects
+              </a></li>
+            <li><a class="nav-link" href="#skills">
+              Skills
+              </a></li>
+            <li><a class="nav-link" href="#contact">
+              Contact
+              </a></li>
+          </ul>
+        </nav>
+    </header>
+    <section id="landing">
+        <h1 onClick="changeColor()">LEVI VARY</h1>
+        <p id="tagline" onclick="nextProfile()">Software Developer</p>
+    </section>
+    <section id="about">
+        <div class="section-wrap">
+            <div id="about-flex">
+                <div>
+                    <h2 onClick="changeColor()">About Me</h2>
+                    <p>&emsp;My name is Levi! I'm a developer in the Bay Area of 
+                        California. I love programming and designing electronics, 
+                        robotics, and software.</p>
+                    <p>&emsp;I made this website to catalogue my tech adventures. 
+                        Below you'll find a library with documentation of the many 
+                        projects I've been working on. | This is a placeholder :P 
+                        Ignore me!</p>
+                </div>
+                <img id="self-photo" src="images/SelfPhoto.png" alt="Levi Vary"/>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section-wrap">
+            <h2 onClick="changeColor()">Projects</h2>
+            <div id="slides">
+                <div id="slideImages">
+                    <img class="slidePhoto" src="images/Project1.png" alt=""/>
+                    <img class="slidePhoto" src="images/Project2.png" alt=""/>
+                    <img class="slidePhoto" src="images/Project3.png" alt=""/>
+                    <img class="slidePhoto" src="images/Project4.png" alt=""/>
+                    <img class="slidePhoto" src="images/Project5.png" alt=""/>
+                    <!--Next/Last Buttons-->
+                    <a class="slideControl" onClick="forwardSlides(-1)">&#10094;</a>
+                    <a class="slideControl slideRight" onClick="forwardSlides(1)">&#10095;</a>
+                </div>
+                <!--Slide Manual Buttons-->
+                <div id="slideButtons">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="section-wrap">
+            <h2 onClick="changeColor()">Skills</h2>
+            <p>The skills tab is probably going to be deleted and instead filters will be present on the projects page. We can organize the filters to work like the original skills tab would have.</p>
+            <p>HTML CSS JavaScript BootStrap ReactJS SCSS JQuery Python SQL NodeJS WordPress Jekyll</p>
+            <p>Photoshop Illustrator Solidworks AutoCAD MatLab</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-wrap">
+            <h2 onClick="changeColor()">Contact Me</h2>
+            <h3>Get In Touch!</h3>
+            <p>Whether you have a question or just want to say hi, my inbox is always open. Email me and I'll do my best to quickly get back to you.</p>
+            <a id="contact-email" href="mailto:email@placeholder.com">Say Hello</a>
+            <p>You can also find me on any of these websites:</p>
+            <div id="media-links">
+                <a class="icons" href="https://github.com/varysteven"><i class="lab la-github"></i></a>
+                <a class="icons" href="www.linkedin.com/in/levi-vary"><i class="lab la-linkedin-in"></i></a> 
+                <a class="icons" href="https://codepen.io/varysteven"><i class="lab la-codepen"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © 2021 Steven Levi Vary</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

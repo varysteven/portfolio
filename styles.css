@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@500&family=Roboto&display=swap');
+
+/* Main */
+:root {
+    /* Palette */
+    --mainColor: red;
+    --subColor: darkred;
+    --gray1: #313133;
+    --gray2: #28282b;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray1);
+    font-family: 'Roboto', sans-serif;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3.5em 2em 0 2em;
+}
+h2 {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--mainColor);
+    font-size: 2.1em;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 1.0em;
+    text-shadow: 0 2px 3px black;
+}
+h2::after {
+    content: '';
+    flex: 1;
+    margin-left: 1rem;
+    height: 2px;
+    background-color: var(--mainColor);
+    box-shadow: 0 2px 3px black;
+}
+p {
+    color: lightgrey;
+    font-size: 1.4em;
+    margin-bottom: 0.6em;
+}
+/* Scaling for Mobile */
+@media (max-width: 500px) {
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+
+/* Navbar */
+#logo {
+    height: 3.5em;
+    margin: 1em 0.5em 0.8em 2em;
+    color: white;
+}
+#nav-bar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    border-bottom: 1px solid var(--mainColor);
+    box-shadow: 0 0 5px var(--subColor);
+}
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: auto 2em auto auto;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 0.8em;
+    padding: 0.4em 0.6em;
+    font-size: 1.2em;
+}
+.nav-link:hover {
+    border-bottom: 2px solid var(--mainColor);
+}
+
+/* Landing */
+#landing {
+    user-select: none;
+    text-align: center;
+}
+#landing h1 {
+    color: var(--mainColor);
+    cursor: pointer;
+    font-size: 6em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.2em auto 0 auto;
+    padding: 0 0.5em;
+    text-shadow: -1px 1px 0 var(--subColor), -2px 2px 0 var(--subColor), -3px 3px 0 var(--subColor),  -4px 4px 0 var(--subColor), -5px 5px 0 var(--subColor), -6px 6px 0 var(--subColor), -7px 7px 0 var(--subColor),
+             -8px 10px 5px black;
+}
+#tagline {
+    color: var(--mainColor);
+    cursor: pointer;
+    font-size: 3em;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0 1em;
+    text-shadow: 0 4px 2px black;
+}
+
+/* About */
+#about {
+    background-color: var(--gray2);
+}
+#about-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+#self-photo{
+    height: 17em;
+    width: 17em;
+    border-radius: 50%;
+    margin: 1em;
+}
+@media (max-width: 650px) {
+    #about-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    #self-photo{
+        height: 13em;
+        width: 13em;
+    }
+}
+
+/* Projects */
+#slides {
+    background-color: var(--gray2);
+    padding: 1.4em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+#slideImages {
+    position: relative;
+}
+.slidePhoto {
+    width: 100%;
+    border-radius: 3px;
+    display: none;
+}
+.slideControl {
+    user-select: none;
+    color: white;
+    font-size: 5em;
+    cursor: pointer;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -1em;
+    padding: 0 0.3em;
+    text-shadow: 0 4px 2px black;
+}
+.slideControl:hover {
+    color: lightgray;
+}
+.slideRight {
+    right: 0;
+}
+
+/* Skills */
+#skills {
+    background-color: var(--gray2);
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+}
+#contact h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    margin: 1em;
+}
+#contact p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#contact-email {
+    display: inline-block;
+    margin: 2em;
+    padding: 0.3em;
+    font-size: 1.6em;
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    text-shadow: 0 2px 3px black;
+    box-shadow: 0 2px 3px black;
+}
+#contact-email:hover {
+    background-color: var(--gray2);
+}
+.icons {
+    display: inline-block;
+    color: white;
+    font-size: 3em;
+    margin: 0.5em;
+}
+
+/* Footer */
+footer {
+    background-color: var(--gray2);
+    text-align: center;
+    font-size: 0.9em;
+}
+footer p {
+    padding: 2em;
+    margin-bottom: 0;
+    color: gray;
+}
