@@ -19,7 +19,7 @@ var profileIndex = 0;
 //Change the text of the tagline
 function nextProfile() {
   //List of the tagline profiles
-  var profiles = ["Software Developer", "Creative Genius", "Sexy Beast"];
+  var profiles = ["Software Developer", "Gadget Inventor", "Creative Genius", "Sexy Beast"];
   //Go to the next profile
   profileIndex++;
   //Loop back to first profile at end

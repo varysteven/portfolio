@@ -44,10 +44,32 @@ h2::after {
     background-color: var(--mainColor);
     box-shadow: 0 2px 3px black;
 }
+h3 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 0.6em;
+}
 p {
     color: lightgrey;
     font-size: 1.4em;
     margin-bottom: 0.6em;
+}
+.button {
+    display: inline-block;
+    margin: 2em auto;
+    padding: 0.3em;
+    font-size: 1.6em;
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    text-shadow: 0 2px 3px black;
+    box-shadow: 0 2px 3px black;
+}
+.button:hover {
+    background-color: var(--gray2);
 }
 /* Scaling for Mobile */
 @media (max-width: 500px) {
@@ -176,8 +198,8 @@ p {
     right: 0;
 }
 
-/* Skills */
-#skills {
+/* FAQ */
+#faq {
     background-color: var(--gray2);
 }
 
@@ -196,23 +218,6 @@ p {
     max-width: 600px;
     margin: 0 auto;
 }
-#contact-email {
-    display: inline-block;
-    margin: 2em;
-    padding: 0.3em;
-    font-size: 1.6em;
-    color: var(--mainColor);
-    border-color: var(--mainColor);
-    border-radius: 5px;
-    border-width: 2px;
-    border-style: solid;
-    text-decoration: none;
-    text-shadow: 0 2px 3px black;
-    box-shadow: 0 2px 3px black;
-}
-#contact-email:hover {
-    background-color: var(--gray2);
-}
 .icons {
     display: inline-block;
     color: white;
@@ -230,4 +235,17 @@ footer p {
     padding: 2em;
     margin-bottom: 0;
     color: gray;
+}
+
+/* 404 */
+#error {
+    color: var(--mainColor);
+    text-align: center;
+    font-size: 4em;
+}
+#error-text {
+    color: var(--mainColor);
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
 }
